@@ -62,16 +62,31 @@ function App() {
       <main>
         <BestSpaSection />
 
-        <div className="w-3/4 mx-auto h-1 bg-light-brown mt-8"></div>
-        <section className="text-center py-8">
-          <h2 className="text-5xl font-semibold text-light-brown font-display tracking-widest">
-            Accentuate Your Confidence
-          </h2>
-          <p className="text-3xl text-light-brown font-body italic">
-            Our Aesthetic Treatments
-          </p>
-        </section>
+     <section className="text-center py-8">
+  <h2 className="text-5xl font-semibold text-light-brown font-display tracking-widest">
+    Accentuate Your Confidence
+  </h2>
+  <p className="text-3xl text-light-brown font-body italic">
+    Our Aesthetic Treatments
+  </p>
+  <div className="mt-4 animate-bounce">
+    <svg
+      className="w-10 h-10 text-light-brown inline-block"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+    </svg>
+  </div>
+</section>
 
+        
+
+
+        
         <section className="w-full bg-dark-brown/20 backdrop-blur-sm py-8">
           <div className="overflow-x-auto whitespace-nowrap p-4 md:flex md:justify-center">
             {services.map((service, index) => (
