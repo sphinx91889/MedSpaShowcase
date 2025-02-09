@@ -27,7 +27,7 @@ export const Navigation = () => {
         >
           <div className="flex flex-col gap-1">
             <span
-              className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
+              className={`block w-6 h-0.5 bg-white transform origin-center transition-transform duration-300 ${
                 isOpen ? 'rotate-45 translate-y-1' : ''
               }`}
             ></span>
@@ -37,7 +37,7 @@ export const Navigation = () => {
               }`}
             ></span>
             <span
-              className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
+              className={`block w-6 h-0.5 bg-white transform origin-center transition-transform duration-300 ${
                 isOpen ? '-rotate-45 -translate-y-1' : ''
               }`}
             ></span>
@@ -51,10 +51,11 @@ export const Navigation = () => {
             px-4 py-2
             text-white
             text-sm
-            uppercase
-            tracking-wider
+            uppercase 
+            tracking-wider 
             border border-light-brown
-            transition-all duration-300
+            transition-all 
+            duration-300 
             hover:border-light-brown
             bg-light-brown
             font-body
