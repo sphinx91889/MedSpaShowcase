@@ -63,10 +63,10 @@ function App() {
         <BestSpaSection />
 
      <section className="text-center py-8">
-  <h2 className="text-5xl font-semibold text-light-brown font-display tracking-widest">
+  <h2 className="text-5xl font-semibold text-light-brown font-display tracking-widest mb-8">
     Accentuate Your Confidence
   </h2>
-  <p className="text-3xl text-light-brown font-body italic">
+  <p className="text-3xl text-light-brown font-body italic mt-4">
     Our Aesthetic Treatments
   </p>
   <div className="mt-4 animate-bounce">
@@ -82,6 +82,7 @@ function App() {
     </svg>
   </div>
 </section>
+
 
         
 
