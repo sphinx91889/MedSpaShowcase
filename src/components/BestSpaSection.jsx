@@ -1,6 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const BestSpaSection = () => {
+  const mapEmbedHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7222406566093!2d-118.39148178829592!3d33.8194803298726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4b56c300d84f%3A0x96620e6f02c97947!2sSpade%20Skin%20Care%20%26%20More%20Inc.!5e0!3m2!1sen!2sus!4v1739140193534!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+
   return (
     <div className="w-screen bg-white/10 min-h-[300px] flex flex-col items-center justify-center pt-8 px-4 mb-8">
       <h2 className="text-4xl md:text-5xl text-light-brown font-display font-semibold text-center mb-4">
@@ -28,24 +30,12 @@ const BestSpaSection = () => {
         alt="World Spa Awards Logo"
         className="h-20 filter brightness-0 sepia-100 hue-rotate-330 saturate-50"
       />
-      {/* Responsive Map Embed */}
-      <div className="mt-6 flex flex-col items-center w-full max-w-xl">
-        <div className="relative w-full" style={{ paddingBottom: '75%', height: 0 }}>
-          <iframe 
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7222406566093!2d-118.39148178829592!3d33.8194803298726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4b56c300d84f%3A0x96620e6f02c97947!2sSpade%20Skin%20Care%20%26%20More%20Inc.!5e0!3m2!1sen!2sus!4v1739140193534!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="absolute top-0 left-0 w-full h-full"
-          ></iframe>
-        </div>
+      {/* Google Map Embed inserted exactly as provided */}
+      <div className="mt-6 overflow-x-auto">
+        <div dangerouslySetInnerHTML={{ __html: mapEmbedHTML }} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BestSpaSection;
+export default BestSpaSection
