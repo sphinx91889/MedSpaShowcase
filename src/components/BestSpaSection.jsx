@@ -30,10 +30,16 @@ const BestSpaSection = () => {
         alt="World Spa Awards Logo"
         className="h-20 filter brightness-0 sepia-100 hue-rotate-330 saturate-50"
       />
-      {/* Google Map Embed inserted exactly as provided */}
-      <div className="mt-6 overflow-x-auto">
+      {/* Responsive Map Embed */}
+      <div className="mt-6 map-container" style={{ maxWidth: '600px', width: '100%' }}>
         <div dangerouslySetInnerHTML={{ __html: mapEmbedHTML }} />
       </div>
+      <style>{`
+        .map-container iframe {
+          width: 100% !important;
+          height: auto !important;
+        }
+      `}</style>
     </div>
   )
 }
