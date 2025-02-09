@@ -10,7 +10,6 @@ export const Navigation = () => {
     }
 
     window.addEventListener('scroll', handleScroll)
-
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
@@ -60,6 +59,13 @@ export const Navigation = () => {
       <div className={`fixed inset-0 backdrop-blur-xl transition-transform duration-500 ease-in-out z-40 md:hidden ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
+        {/* Close Button */}
+        <button 
+          onClick={() => setIsOpen(false)} 
+          className="absolute top-4 right-4 text-white text-3xl z-50"
+        >
+          &times;
+        </button>
         <nav className="h-full flex items-center justify-center">
           <ul className="flex flex-col gap-8 text-center">
             {['Home', 'Services', 'About', 'Contact'].map((item) => (
