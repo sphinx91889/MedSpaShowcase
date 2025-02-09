@@ -1,21 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 
 const BestSpaSection = () => {
-  const mapContainerRef = useRef(null);
+  const mapContainerRef = useRef(null)
 
   useEffect(() => {
-    // Create and append the external script manually in case it isn’t executed from the raw HTML.
+    // Dynamically load the external script for map authorization.
     if (mapContainerRef.current) {
-      const script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = 'https://embedmaps.com/google-maps-authorization/script.js?id=327d86f0388a494678b41ab0d16e308d2505298c';
-      script.async = true;
-      mapContainerRef.current.appendChild(script);
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.src = 'https://embedmaps.com/google-maps-authorization/script.js?id=327d86f0388a494678b41ab0d16e308d2505298c'
+      script.async = true
+      mapContainerRef.current.appendChild(script)
     }
-  }, []);
+  }, [])
 
   return (
-    <div className="w-screen bg-white/10 min-h-[300px] flex flex-col items-center justify-center pt-8 px-4">
+    <div className="w-screen bg-white/10 min-h-[300px] flex flex-col items-center justify-center pt-8 px-4 mb-8">
       <h2 className="text-4xl md:text-5xl text-light-brown font-display font-semibold text-center mb-4">
         Rated Best Medical Spa in Los Angeles
       </h2>
@@ -55,7 +55,7 @@ const BestSpaSection = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BestSpaSection;
+export default BestSpaSection
