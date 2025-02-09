@@ -2,16 +2,12 @@ import React from 'react';
 
 const HeroTextSection = () => {
   return (
-    <section 
-      className="relative py-24 bg-cover bg-center" 
-      style={{ backgroundImage: "url('https://example.com/luxurious-background.jpg')" }}
-    >
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative max-w-4xl mx-auto text-center px-4">
-        <h1 className="text-6xl md:text-7xl font-serif font-bold text-yellow-400 mb-6 drop-shadow-lg">
+    <section className="py-20 bg-gradient-to-r from-white to-light-brown/20">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-6xl md:text-7xl font-body text-dark-brown mb-6">
           Unleash Your Radiance
         </h1>
-        <p className="text-2xl md:text-3xl text-white italic mb-0">
+        <p className="text-2xl md:text-3xl font-body text-light-brown">
           Where beauty meets innovation.
         </p>
       </div>
