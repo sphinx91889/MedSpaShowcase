@@ -9,7 +9,7 @@ const ServiceCard = ({ imageUrl, title, services }) => {
 
   return (
     <div
-      className="relative w-48 h-48 md:w-64 md:h-64 overflow-hidden transition-transform duration-300 hover:scale-105 group"
+      className="relative w-48 h-48 md:w-48 md:h-48 overflow-hidden transition-transform duration-300 hover:scale-105 group"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
