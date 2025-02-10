@@ -88,20 +88,7 @@ function App() {
 
 
         
-        <section className="w-full bg-dark-brown/20 backdrop-blur-sm py-8">
-          <div className="overflow-x-auto whitespace-nowrap p-4 md:flex md:justify-center">
-            {services.map((service, index) => (
-              <div 
-                key={index} 
-                className="inline-block w-48 h-48 md:w-64 md:h-64 transform hover:scale-105 transition duration-300"
-              >
-                <ServiceCard {...service} />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Hero Text Section with reduced vertical padding if needed */}
+        
 
         
         {/* Image and Content Section with adjusted padding to reduce gap */}
