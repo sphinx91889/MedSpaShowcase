@@ -104,41 +104,43 @@ function App() {
         {/* Hero Text Section with reduced vertical padding if needed */}
         <HeroTextSection />
         {/* Image and Content Section with adjusted padding to reduce gap */}
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-transparent to-dark-brown/10 p-0">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-            {/* Image Section */}
-            <div className="md:w-1/2 p-4">
-              <img 
-                src="https://www.thinmdmedspa.com/wp-content/uploads/2019/04/weight-loss-programs-in-jacksonville-fl-5.png"
-                alt="Overview of Weight Loss Program"
-                className="w-full rounded-lg shadow-xl"
-              />
-            </div>
-            {/* Content Section */}
-            <div className="md:w-1/2 p-4 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl font-semibold text-center md:text-left font-body tracking-wide mb-4 text-light-brown">
-                Committed to Aesthetics & Wellness Excellence
-              </h2>
-              <p className="text-lg mb-4 text-center md:text-left">
-                At Examplus Medical Spa, our passion is helping you shine through by merging innovative treatments with personalized care. Our dedicated team works with the latest technology to bring you safe, effective, and luxurious aesthetic and wellness solutions.
-              </p>
-              <ul className="list-disc list-inside mb-6 text-lg text-center md:text-left">
-                <li>Expert Practitioners & State-of-the-Art Technology</li>
-                <li>Customized Treatment Plans for Your Unique Needs</li>
-                <li>Holistic Approach to Beauty and Wellness</li>
-                <li>Relaxing, Luxurious Environment</li>
-              </ul>
-              <div className="flex justify-center md:justify-start">
-                <a 
-                  href="#contact" 
-                  className="px-6 py-3 bg-light-brown text-white rounded-full text-xl hover:bg-light-brown/90 transition duration-300"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+       <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-transparent to-dark-brown/10 p-0">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+    {/* Image Section */}
+    <div className="w-full md:w-1/2 p-4">
+      <img
+        src="https://www.thinmdmedspa.com/wp-content/uploads/2019/04/weight-loss-programs-in-jacksonville-fl-5.png"
+        alt="Overview of Weight Loss Program"
+        className="w-full rounded-lg shadow-xl"
+      />
+    </div>
+
+    {/* Content Section */}
+    <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center md:text-left font-body tracking-wide mb-4 text-light-brown">
+        Committed to Aesthetics &amp; Wellness Excellence
+      </h2>
+      <p className="text-lg mb-4 text-center md:text-left">
+        At Examplus Medical Spa, our passion is helping you shine through by merging innovative treatments with personalized care. Our dedicated team works with the latest technology to bring you safe, effective, and luxurious aesthetic and wellness solutions.
+      </p>
+      <ul className="list-disc list-inside mb-6 text-lg text-center md:text-left">
+        <li>Expert Practitioners &amp; State-of-the-Art Technology</li>
+        <li>Customized Treatment Plans for Your Unique Needs</li>
+        <li>Holistic Approach to Beauty and Wellness</li>
+        <li>Relaxing, Luxurious Environment</li>
+      </ul>
+      <div className="flex justify-center md:justify-start">
+        <a
+          href="#contact"
+          className="px-6 py-3 bg-light-brown text-white rounded-full text-xl hover:bg-light-brown/90 transition duration-300"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <section className="w-full bg-dark-brown backdrop-blur-sm py-12">
           <div className="flex flex-col items-center justify-center text-white">
