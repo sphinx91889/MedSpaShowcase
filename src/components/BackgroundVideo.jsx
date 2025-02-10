@@ -5,7 +5,7 @@ const videos = [
   'https://videos.pexels.com/video-files/8131885/8131885-uhd_1440_2732_25fps.mp4',
   'https://videos.pexels.com/video-files/8131887/8131887-uhd_1440_2732_25fps.mp4',
   'https://videos.pexels.com/video-files/4772527/4772527-uhd_1440_2560_24fps.mp4',
-  'https://videos.pexels.com/video-files/3761687/3761687-uhd_1440_2560_25fps.mp4'
+  'https://videos.pexels.com/video-files/3761687/3761687-uhd_1440_2560_25fps.mp4',
 ]
 
 export const BackgroundVideo = () => {
@@ -31,6 +31,9 @@ export const BackgroundVideo = () => {
           muted
           loop
           playsInline
+          style={{
+            transition: 'opacity 1s ease-in-out',
+          }}
         >
           <source src={video} type="video/mp4" />
         </video>
