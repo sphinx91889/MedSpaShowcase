@@ -104,7 +104,7 @@ function App() {
         {/* Hero Text Section with reduced vertical padding if needed */}
         <HeroTextSection />
         {/* Image and Content Section with adjusted padding to reduce gap */}
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-transparent to-dark-brown/10 p-4">
+        <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-transparent to-dark-brown/10 p-0">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
             {/* Image Section */}
             <div className="md:w-1/2 p-4">
